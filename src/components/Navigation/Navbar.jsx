@@ -25,7 +25,7 @@ const Navbar = (props) => {
     <>
       <div className="fixed  z-50 flex top-0 items-start justify-between  overflow-hidden  w-full">
         <div className="w-36 p-2 ">
-          <Link href="/">
+          <Link to="/">
             <svg
               className="w-full logoA"
               xmlns="http://www.w3.org/2000/svg"
