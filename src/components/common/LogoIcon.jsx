@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom";
+import FullScreenNav from "../Navigation/FullScreenNav";
 const LogoIcon = (props) => {
   const navRef1 = useRef(null);
   const navRef2 = useRef(null);
@@ -19,6 +20,7 @@ const LogoIcon = (props) => {
   const menuRef3 = useRef(null);
   const ARef = useRef(null);
 
+  const [showFullScreenNav, setShowFullScreenNav] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -181,7 +183,7 @@ const LogoIcon = (props) => {
 
         <div
           ref={menuRef}
-          onClick={() => navigate("/menu")}
+          onClick={() => setShowFullScreenNav(true)}
           onMouseEnter={() => {
             navRef3.current.style.height = "100%";
             headref3.current.style.color = "black";
@@ -222,6 +224,9 @@ const LogoIcon = (props) => {
           </div>
         </div>
       </div>
+      {showFullScreenNav && (
+        <FullScreenNav onClose={() => setShowFullScreenNav(false)} />
+      )}
     </div>
   );
 };
