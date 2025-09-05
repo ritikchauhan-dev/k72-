@@ -1,7 +1,7 @@
-import { useGSAP } from "@gsap/react";
 import React from "react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-
+import { Link } from "react-router-dom";
 const MenuLinks = () => {
   useGSAP(function () {
     gsap.from(".link1", {
@@ -17,7 +17,7 @@ const MenuLinks = () => {
   });
   return (
     <div className="overflow-hidden">
-      <a href="/projects">
+      <Link to="/projects">
         <div className="overflow-hidden link origin-top relative border-t-1 border-white">
           <h1 className="link1 font-[font2] uppercase text-6xl text-center pt-7 pb-5 md:pt-6 md:pb-3 leading-[0.7] sm:text-7xl sm:pt-8 sm:leading-[0.8] md:text-[9vw] xl:leading-[0.9] xl:pb-2 xl:pt-5 2xl:leading-[0.8] 2xl:pb-0  2xl:pt-5">
             Projets
@@ -61,8 +61,8 @@ const MenuLinks = () => {
             </div>
           </div>
         </div>
-      </a>
-      <a href="/agence">
+      </Link>
+      <Link to="/agence">
         <div className="link overflow-hidden origin-top relative border-t-1 border-white">
           <h1 className="link1 font-[font2] uppercase text-6xl text-center pt-7 pb-5 md:pt-6 md:pb-3 leading-[0.7] sm:text-7xl sm:pt-8 sm:leading-[0.8] md:text-[9vw] xl:leading-[0.9] xl:pb-2 xl:pt-5 2xl:leading-[0.8] 2xl:pb-0  2xl:pt-5">
             Agence
@@ -106,8 +106,8 @@ const MenuLinks = () => {
             </div>
           </div>
         </div>
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="/">
         <div className="link overflow-hidden origin-top relative border-t-1 border-white">
           <h1 className="link1 font-[font2] uppercase text-6xl text-center pt-7 pb-5 md:pt-6 md:pb-3 leading-[0.7] sm:text-7xl sm:pt-8 sm:leading-[0.8] md:text-[9vw] xl:leading-[0.9] xl:pb-2 xl:pt-5 2xl:leading-[0.8] 2xl:pb-0  2xl:pt-5">
             Contact
@@ -151,8 +151,8 @@ const MenuLinks = () => {
             </div>
           </div>
         </div>
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="/">
         <div className="link overflow-hidden origin-top relative border-y-1 border-white">
           <h1 className="link1 font-[font2] uppercase text-6xl text-center pt-7 pb-5 md:pt-6 md:pb-3 leading-[0.7] sm:text-7xl sm:pt-8 sm:leading-[0.8] md:text-[9vw] xl:leading-[0.9] xl:pb-2 xl:pt-5 2xl:leading-[0.8] 2xl:pb-0  2xl:pt-5 ">
             Blogs
@@ -196,7 +196,7 @@ const MenuLinks = () => {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
