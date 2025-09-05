@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+::selection {
+    background: #D3FD50;
+}
+
+@font-face {
+    font-family: Font1;
+    src: url(../public/fonts/Lausanne-300.woff2);
+
+}
+
+@font-face {
+    font-family: Font2;
+    src: url(../public/fonts/Lausanne-500.woff2);
+
+}
+
+@keyframes right {
+    100% {
+        transform: translateX(0);
+    }
+
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+@keyframes left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.moveing {
+
+    animation-name: left;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+.moveleft {
+    animation-name: left;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+.moveright {
+    animation-name: right;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+
+.moveX {
+    animation-name: moveAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.moveLink {
+    opacity: 0;
+    transition: all ease-in-out 0.2s;
+}
+
+.link:hover .moveLink {
+    opacity: 1;
+    ;
+    ;
+}
+
+@keyframes moveAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
