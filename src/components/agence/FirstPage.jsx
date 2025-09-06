@@ -8,20 +8,20 @@ const FirstPage = () => {
   const imageDivRef = useRef(null);
   const imageRef = useRef(null);
   const imageArray = [
-    "https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/ChantalG_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/Lawrence_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/Olivier_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/MEL_480X640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/Claire_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/SophieA_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/MyleneS_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/HugoJoseph_480x640-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/MAXIME_480X640_2-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/CAMILLE_480X640_2-480x640.jpg",
-    "https://k72.ca/uploads/teamMembers/Michele_480X640-480x640.jpg",
+    "/1.webp",
+    "/2.webp",
+    "/3.webp",
+    "/4.webp",
+    "/5.webp",
+    "/6.webp",
+    "/7.webp",
+    "/8.webp",
+    "/9.webp",
+    "/10.webp",
+    "/11.webp",
+    "/12.webp",
+    "/13.webp",
+    "/14.webp",
   ];
 
   useGSAP(function () {
