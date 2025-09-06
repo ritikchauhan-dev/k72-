@@ -11,11 +11,14 @@ const Agence = () => {
   return (
     <div className="">
       {showFullScreenNav ? (
-        <FullScreenNav onClose={() => setShowFullScreenNav(false)} />
+        <FullScreenNav
+          navopen={() => showFullScreenNav}
+          onClose={() => setShowFullScreenNav(false)}
+        />
       ) : (
         <>
           <div className="md:hidden">
-            <Navbar color="black" />
+            <Navbar color="black" setShowFullScreenNav={setShowFullScreenNav} />
           </div>
           <LogoIcon color="black" setShowFullScreenNav={setShowFullScreenNav} />
           <div>

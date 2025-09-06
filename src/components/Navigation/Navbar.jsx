@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import FullScreenNav from "./FullScreenNav";
+import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
@@ -7,7 +6,6 @@ const Navbar = (props) => {
   const navRef = useRef(null);
   const lineRef1 = useRef(null);
   const lineRef2 = useRef(null);
-  const [showFullScreenNav, setShowFullScreenNav] = useState(false);
 
   useGSAP(function () {
     gsap.from(".logoA", {
@@ -41,7 +39,10 @@ const Navbar = (props) => {
         </div>
 
         <div
-          onClick={() => setShowFullScreenNav(true)}
+          onClick={() =>
+            props.setShowFullScreenNav &&
+            props.setShowFullScreenNav((prev) => !prev)
+          }
           onMouseEnter={() => {
             navRef.current.style.height = "100%";
             lineRef1.current.style.backgroundColor = "#000";
@@ -72,9 +73,6 @@ const Navbar = (props) => {
           </div>
         </div>
       </div>
-      {showFullScreenNav && (
-        <FullScreenNav onClose={() => setShowFullScreenNav(false)} />
-      )}
     </>
   );
 };

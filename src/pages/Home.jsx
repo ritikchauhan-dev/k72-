@@ -4,21 +4,32 @@ import Image from "../components/home/Image";
 import HomeUpperText from "../components/home/HomeUpperText";
 import HomeLowerText from "../components/home/HomeLowerText";
 import Navbar from "../components/Navigation/Navbar";
-
+import FullScreenNav from "../components/Navigation/FullScreenNav";
+import { useState } from "react";
 const Home = () => {
+  const [showFullScreenNav, setShowFullScreenNav] = useState(false);
   return (
     <div>
-      <Navbar color="white" />
-      <div>
-        <div className="fixed h-screen w-screen">
-          <Image />
-          <Video />
-        </div>
-        <div className="relative h-screen pb-2 pt-55 lg:pt-0 flex flex-col gap-20 items-center  justify-between  p-4">
-          <HomeUpperText />
-          <HomeLowerText />
-        </div>
-      </div>
+      {showFullScreenNav ? (
+        <FullScreenNav
+          navopen={() => showFullScreenNav}
+          onClose={() => setShowFullScreenNav(false)}
+        />
+      ) : (
+        <>
+          <Navbar color="white" setShowFullScreenNav={setShowFullScreenNav} />
+          <div>
+            <div className="fixed h-screen w-screen">
+              <Image />
+              <Video />
+            </div>
+            <div className="relative h-screen pb-2 pt-55 lg:pt-0 flex flex-col gap-20 items-center  justify-between  p-4">
+              <HomeUpperText />
+              <HomeLowerText />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

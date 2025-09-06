@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useLocation } from "react-router-dom";
-const Starirs = (props) => {
+const Stairs = (props) => {
   const currentPath = useLocation().pathname;
   const pageRef = useRef(null);
   const stairPaentRef = useRef(null);
@@ -55,4 +55,4 @@ const Starirs = (props) => {
   );
 };
 
-export default Starirs;
+export default Stairs;
