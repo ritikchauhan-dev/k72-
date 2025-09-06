@@ -10,23 +10,25 @@ const FullScreenNav = (props) => {
   useGSAP(function () {
     const tl = gsap.timeline();
     tl.from(".stairing", {
-      onStart: () => {
-        gsap.to(".linksOfMenu", {
-          opacity: 0,
+      // onStart: () => {
+      //   gsap.to(".linksOfMenu", {
+      //     opacity: 0,
+      //   });
+      // },
+      onComplete: () => {
+        gsap.to(".stairs", {
+          display: "none",
         });
       },
-      delay: 0.2,
       height: 0,
       stagger: {
-        amount: -0.5,
+        amount: -0.4,
       },
     });
     tl.to(".stairing", {
-      delay: 0.2,
       height: 0,
-      duration: 0.5,
       stagger: {
-        amount: -0.5,
+        amount: -0.4,
       },
       onComplete: () => {
         gsap.to(".stairs", {
@@ -142,7 +144,7 @@ const FullScreenNav = (props) => {
         <div className="w-36 cross1 p-2  rotate-140 bg-[#D3FD50]"></div>
         <div className="w-36 cross2 p-2  rotate-40 bg-[#D3FD50]"></div>
       </div>
-      <div className="linksOfMenu ">
+      <div className="linksOfMenu bg-black">
         <MenuLinks />
         <div className="flex flex-col xl:flex-row justify-between items-center gap-2 xl:items-baseline-last fixed bottom-2 lg:bottom-4 xl:bottom-2 z-50 w-full px-8 lg:px-3">
           <Footer />
