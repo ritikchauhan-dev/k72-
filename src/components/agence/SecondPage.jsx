@@ -66,7 +66,7 @@ const SecondPage = () => {
           <img
             ref={imageRef1}
             className="w-[60vw] h-[70vh] md:w-[40vw] md:h-[100vh] rounded-4xl relative object-cover"
-            src="https://k72.ca/uploads/teamMembers/blank-640x960.jpg"
+            src="/img/19.webp"
             alt=""
           />
         </div>
@@ -75,7 +75,7 @@ const SecondPage = () => {
           <img
             ref={imageRef2}
             className="w-[60vw] h-[70vh] md:w-[40vw] md:h-[100vh] relative rounded-4xl object-cover"
-            src="https://k72.ca/uploads/teamMembers/Lawrence_640X960-640x960.jpg"
+            src="/img/20.webp"
             alt=""
           />
         </div>
