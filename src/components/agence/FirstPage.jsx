@@ -8,20 +8,20 @@ const FirstPage = () => {
   const imageDivRef = useRef(null);
   const imageRef = useRef(null);
   const imageArray = [
-    "/1.webp",
-    "/2.webp",
-    "/3.webp",
-    "/4.webp",
-    "/5.webp",
-    "/6.webp",
-    "/7.webp",
-    "/8.webp",
-    "/9.webp",
-    "/10.webp",
-    "/11.webp",
-    "/12.webp",
-    "/13.webp",
-    "/14.webp",
+    "/img/1.webp",
+    "/img/2.webp",
+    "/img/3.webp",
+    "/img/4.webp",
+    "/img/5.webp",
+    "/img/6.webp",
+    "/img/7.webp",
+    "/img/8.webp",
+    "/img/9.webp",
+    "/img/10.webp",
+    "/img/11.webp",
+    "/img/12.webp",
+    "/img/13.webp",
+    "/img/14.webp",
   ];
 
   useGSAP(function () {

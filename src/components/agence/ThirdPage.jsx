@@ -87,7 +87,7 @@ const ThirdPage = () => {
         </span>
         <img
           className="h-full w-full object-cover lg:w-full rounded-t-4xl brightness-90"
-          src="https://k72.ca/uploads/caseStudies/LAMAJEURE_-_Son_sur_mesure/chalaxeur-thumbnail_img-1280x960.jpg"
+          src="/img/16.webp"
           alt=""
         />
       </div>
@@ -98,7 +98,7 @@ const ThirdPage = () => {
         </span>
         <img
           className="h-full w-full object-cover rounded-t-4xl brightness-90"
-          src="https://k72.ca/uploads/caseStudies/CRISIS24/crisis24_behance_1920X1200_cartes-1280x960.jpg"
+          src="/img/17.webp"
           alt=""
         />
       </div>
@@ -109,7 +109,7 @@ const ThirdPage = () => {
         </span>
         <img
           className="h-full w-full object-cover rounded-t-4xl "
-          src="https://k72.ca/uploads/caseStudies/FRUITE/Fruite_thumbnail_bbq-1280x960.jpg"
+          src="/img/18.webp"
           alt=""
         />
       </div>

@@ -20,7 +20,7 @@ const Image = () => {
   return visible ? (
     <div className=" h-full w-full fixed top-0 left-0 z-50 bg-black">
       <img
-        src="https://k72.ca/uploads/vlcsnap-2021-04-21-16h11m49s996.jpg"
+        src="/img/15.webp"
         alt=""
         className="h-full w-full image object-cover"
       />
